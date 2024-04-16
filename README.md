@@ -59,24 +59,3 @@
 ```bash
    scp -r fortune_500_web_scraper sfbu:~/
 ```
-
-## Local port forwarding to the remote database
-
-```bash
-   ssh -L 3307:50.112.145.155:3306 sfbu
-```
-
-## Connect to the MySQL server
-
-```bash
-   mysql -u professor -p -P 3307
-```
-
-- username: professor
-- password: 510Fremont
-
-mysql -u professor -p -h 50.112.145.155
-
-mysql -u professor -p -h cs531database.labnet.sfbu.edu
-
-tail -n 4 ~/.ssh/config
